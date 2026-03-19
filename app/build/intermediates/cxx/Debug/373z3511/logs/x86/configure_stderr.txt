@@ -1,0 +1,110 @@
+CMake Warning (dev) at CMakeLists.txt:1 (project):
+  cmake_minimum_required() should be called prior to this top-level project()
+  call.  Please see the cmake-commands(7) manual for usage documentation of
+  both commands.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Deprecation Warning at E:/Sdk/ndk/27.0.12077973/build/cmake/android.toolchain.cmake:35 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+Call Stack (most recent call first):
+  E:/Sdk/cmake/3.31.5/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake:146 (include)
+  CMakeLists.txt:1 (project)
+
+
+CMake Deprecation Warning at E:/Sdk/ndk/27.0.12077973/build/cmake/android-legacy.toolchain.cmake:35 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+Call Stack (most recent call first):
+  E:/Sdk/ndk/27.0.12077973/build/cmake/android.toolchain.cmake:55 (include)
+  E:/Sdk/cmake/3.31.5/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake:146 (include)
+  CMakeLists.txt:1 (project)
+
+
+CMake Deprecation Warning at E:/Sdk/ndk/27.0.12077973/build/cmake/android.toolchain.cmake:35 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+Call Stack (most recent call first):
+  E:/AS/test/ncnn-android-yolov8-master/app/.cxx/Debug/373z3511/x86/CMakeFiles/3.31.5/CMakeSystem.cmake:6 (include)
+  CMakeLists.txt:1 (project)
+
+
+CMake Deprecation Warning at E:/Sdk/ndk/27.0.12077973/build/cmake/android.toolchain.cmake:35 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+Call Stack (most recent call first):
+  E:/AS/test/ncnn-android-yolov8-master/app/.cxx/Debug/373z3511/x86/CMakeFiles/3.31.5/CMakeSystem.cmake:6 (include)
+  E:/AS/test/ncnn-android-yolov8-master/app/.cxx/Debug/373z3511/x86/CMakeFiles/CMakeScratch/TryCompile-qhz05h/CMakeLists.txt:4 (project)
+
+
+CMake Deprecation Warning at E:/Sdk/ndk/27.0.12077973/build/cmake/android-legacy.toolchain.cmake:35 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+Call Stack (most recent call first):
+  E:/Sdk/ndk/27.0.12077973/build/cmake/android.toolchain.cmake:55 (include)
+  E:/AS/test/ncnn-android-yolov8-master/app/.cxx/Debug/373z3511/x86/CMakeFiles/3.31.5/CMakeSystem.cmake:6 (include)
+  E:/AS/test/ncnn-android-yolov8-master/app/.cxx/Debug/373z3511/x86/CMakeFiles/CMakeScratch/TryCompile-qhz05h/CMakeLists.txt:4 (project)
+
+
+CMake Deprecation Warning at E:/Sdk/ndk/27.0.12077973/build/cmake/android.toolchain.cmake:35 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+Call Stack (most recent call first):
+  E:/AS/test/ncnn-android-yolov8-master/app/.cxx/Debug/373z3511/x86/CMakeFiles/3.31.5/CMakeSystem.cmake:6 (include)
+  E:/AS/test/ncnn-android-yolov8-master/app/.cxx/Debug/373z3511/x86/CMakeFiles/CMakeScratch/TryCompile-kprx56/CMakeLists.txt:4 (project)
+
+
+CMake Deprecation Warning at E:/Sdk/ndk/27.0.12077973/build/cmake/android-legacy.toolchain.cmake:35 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+Call Stack (most recent call first):
+  E:/Sdk/ndk/27.0.12077973/build/cmake/android.toolchain.cmake:55 (include)
+  E:/AS/test/ncnn-android-yolov8-master/app/.cxx/Debug/373z3511/x86/CMakeFiles/3.31.5/CMakeSystem.cmake:6 (include)
+  E:/AS/test/ncnn-android-yolov8-master/app/.cxx/Debug/373z3511/x86/CMakeFiles/CMakeScratch/TryCompile-kprx56/CMakeLists.txt:4 (project)
+
+
+CMake Error at CMakeLists.txt:8 (find_package):
+  By not providing "FindOpenCV.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "OpenCV", but
+  CMake did not find one.
+
+  Could not find a package configuration file provided by "OpenCV" with any
+  of the following names:
+
+    OpenCVConfig.cmake
+    opencv-config.cmake
+
+  Add the installation prefix of "OpenCV" to CMAKE_PREFIX_PATH or set
+  "OpenCV_DIR" to a directory containing one of the above files.  If "OpenCV"
+  provides a separate development package or SDK, be sure it has been
+  installed.
+
+

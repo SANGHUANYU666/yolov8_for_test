@@ -1,0 +1,38 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.tencent.yolov8ncnn'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.tencent.yolov8ncnn"
+        archivesBaseName = "$applicationId"
+
+        minSdk 24
+        targetSdk 34
+
+        externalNativeBuild {
+            cmake {
+                arguments "-DANDROID_SUPPORT_FLEXIBLE_PAGE_SIZES=ON"
+            }
+        }
+    }
+
+    externalNativeBuild {
+        cmake {
+            version "3.31.5"
+            path file('src/main/jni/CMakeLists.txt')
+        }
+    }
+
+    dependencies {
+    }
+
+    packaging {
+        jniLibs {
+            useLegacyPackaging true
+        }
+    }
+}

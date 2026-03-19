@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>YOLOv8 NCNN</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html, body {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    overflow: hidden;
+    font-family: -apple-system, sans-serif;
+  }
+
+  #toolbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    pointer-events: auto;
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 8px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .toolbar-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .toolbar-label {
+    color: #ccc;
+    font-size: 11px;
+    min-width: 36px;
+  }
+
+  select {
+    flex: 1;
+    background: rgba(255,255,255,0.12);
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 6px;
+    padding: 4px 6px;
+    font-size: 12px;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+  }
+
+  select option {
+    background: #1a1a1a;
+    color: #fff;
+  }
+
+  button {
+    background: rgba(255,255,255,0.15);
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 6px;
+    padding: 5px 12px;
+    font-size: 12px;
+    cursor: pointer;
+    white-space: nowrap;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  button:active {
+    background: rgba(255,255,255,0.3);
+  }
+
+  /* Camera area: pointer events pass through to SurfaceView */
+  #camera-area {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  /* Stats badge bottom-right */
+  #stats {
+    position: fixed;
+    bottom: 16px;
+    right: 12px;
+    z-index: 100;
+    pointer-events: none;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 8px;
+    padding: 6px 10px;
+    color: #fff;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: right;
+    min-width: 80px;
+  }
+
+  #stats .fps { color: #4ade80; font-weight: bold; }
+  #stats .count { color: #60a5fa; }
+</style>
+</head>
+<body>
+
+<div id="camera-area"></div>
+
+<div id="toolbar">
+  <div class="toolbar-row">
+    <button id="btn-switch-camera" onclick="switchCamera()">&#8635; 切换</button>
+    <span class="toolbar-label">Task</span>
+    <select id="sel-task" onchange="onSettingChanged()">
+      <option value="0">Detect</option>
+      <option value="1">Detect OIV7</option>
+      <option value="2">Segment</option>
+      <option value="3">Pose</option>
+      <option value="4">Classify</option>
+      <option value="5">OBB</option>
+    </select>
+  </div>
+  <div class="toolbar-row">
+    <span class="toolbar-label">Model</span>
+    <select id="sel-model" onchange="onSettingChanged()">
+      <option value="0">n 320</option>
+      <option value="1">s 320</option>
+      <option value="2">m 320</option>
+      <option value="3">n 480</option>
+      <option value="4">s 480</option>
+      <option value="5">m 480</option>
+      <option value="6">n 640</option>
+      <option value="7">s 640</option>
+      <option value="8">m 640</option>
+    </select>
+    <span class="toolbar-label">Backend</span>
+    <select id="sel-cpugpu" onchange="onSettingChanged()">
+      <option value="0">CPU</option>
+      <option value="1">GPU</option>
+      <option value="2">Turnip</option>
+    </select>
+  </div>
+</div>
+
+<div id="stats">
+  <div class="fps" id="stat-fps">-- FPS</div>
+  <div class="count" id="stat-count">-- obj</div>
+</div>
+
+<script>
+(function() {
+  // Load initial state from Java
+  function init() {
+    if (window.Android && Android.getInitialState) {
+      try {
+        var state = Android.getInitialState();
+        var s = JSON.parse(state);
+        document.getElementById('sel-task').value = s.task;
+        document.getElementById('sel-model').value = s.model;
+        document.getElementById('sel-cpugpu').value = s.cpugpu;
+      } catch(e) {
+        console.warn('getInitialState failed', e);
+      }
+    }
+  }
+
+  window.switchCamera = function() {
+    if (window.Android && Android.switchCamera) {
+      Android.switchCamera();
+    }
+  };
+
+  window.onSettingChanged = function() {
+    var task = parseInt(document.getElementById('sel-task').value);
+    var model = parseInt(document.getElementById('sel-model').value);
+    var cpugpu = parseInt(document.getElementById('sel-cpugpu').value);
+    if (window.Android && Android.loadModel) {
+      Android.loadModel(task, model, cpugpu);
+    }
+  };
+
+  // Called by Java via evaluateJavascript
+  window.onDetectionResult = function(data) {
+    if (!data) return;
+    var fps = data.fps !== undefined ? data.fps.toFixed(1) : '--';
+    var count = data.count !== undefined ? data.count : '--';
+    document.getElementById('stat-fps').textContent = fps + ' FPS';
+    document.getElementById('stat-count').textContent = count + ' obj';
+  };
+
+  // Run init on DOM ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
+</body>
+</html>

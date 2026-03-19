@@ -1,0 +1,119 @@
+[
+  {
+    "level_": 0,
+    "message_": "Start JSON generation. Platform version: 24 min SDK version: x86",
+    "file_": "E:\\AS\\test\\ncnn-android-yolov8-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "level_": 0,
+    "message_": "rebuilding JSON E:\\AS\\test\\ncnn-android-yolov8-master\\app\\.cxx\\Debug\\373z3511\\x86\\android_gradle_build.json due to:",
+    "file_": "E:\\AS\\test\\ncnn-android-yolov8-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "level_": 0,
+    "message_": "- no fingerprint file, will remove stale configuration folder",
+    "file_": "E:\\AS\\test\\ncnn-android-yolov8-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "level_": 0,
+    "message_": "removing stale contents from \u0027E:\\AS\\test\\ncnn-android-yolov8-master\\app\\.cxx\\Debug\\373z3511\\x86\u0027",
+    "file_": "E:\\AS\\test\\ncnn-android-yolov8-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "level_": 0,
+    "message_": "created folder \u0027E:\\AS\\test\\ncnn-android-yolov8-master\\app\\.cxx\\Debug\\373z3511\\x86\u0027",
+    "file_": "E:\\AS\\test\\ncnn-android-yolov8-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "level_": 0,
+    "message_": "executing cmake @echo off\n\"E:\\\\Sdk\\\\cmake\\\\3.31.5\\\\bin\\\\cmake.exe\" ^\n  \"-HE:\\\\AS\\\\test\\\\ncnn-android-yolov8-master\\\\app\\\\src\\\\main\\\\jni\" ^\n  \"-DCMAKE_SYSTEM_NAME\u003dAndroid\" ^\n  \"-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON\" ^\n  \"-DCMAKE_SYSTEM_VERSION\u003d24\" ^\n  \"-DANDROID_PLATFORM\u003dandroid-24\" ^\n  \"-DANDROID_ABI\u003dx86\" ^\n  \"-DCMAKE_ANDROID_ARCH_ABI\u003dx86\" ^\n  \"-DANDROID_NDK\u003dE:\\\\Sdk\\\\ndk\\\\27.0.12077973\" ^\n  \"-DCMAKE_ANDROID_NDK\u003dE:\\\\Sdk\\\\ndk\\\\27.0.12077973\" ^\n  \"-DCMAKE_TOOLCHAIN_FILE\u003dE:\\\\Sdk\\\\ndk\\\\27.0.12077973\\\\build\\\\cmake\\\\android.toolchain.cmake\" ^\n  \"-DCMAKE_MAKE_PROGRAM\u003dE:\\\\Sdk\\\\cmake\\\\3.31.5\\\\bin\\\\ninja.exe\" ^\n  \"-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003dE:\\\\AS\\\\test\\\\ncnn-android-yolov8-master\\\\app\\\\build\\\\intermediates\\\\cxx\\\\Debug\\\\373z3511\\\\obj\\\\x86\" ^\n  \"-DCMAKE_RUNTIME_OUTPUT_DIRECTORY\u003dE:\\\\AS\\\\test\\\\ncnn-android-yolov8-master\\\\app\\\\build\\\\intermediates\\\\cxx\\\\Debug\\\\373z3511\\\\obj\\\\x86\" ^\n  \"-DCMAKE_BUILD_TYPE\u003dDebug\" ^\n  \"-BE:\\\\AS\\\\test\\\\ncnn-android-yolov8-master\\\\app\\\\.cxx\\\\Debug\\\\373z3511\\\\x86\" ^\n  -GNinja ^\n  \"-DANDROID_SUPPORT_FLEXIBLE_PAGE_SIZES\u003dON\"\n",
+    "file_": "E:\\AS\\test\\ncnn-android-yolov8-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "level_": 0,
+    "message_": "@echo off\n\"E:\\\\Sdk\\\\cmake\\\\3.31.5\\\\bin\\\\cmake.exe\" ^\n  \"-HE:\\\\AS\\\\test\\\\ncnn-android-yolov8-master\\\\app\\\\src\\\\main\\\\jni\" ^\n  \"-DCMAKE_SYSTEM_NAME\u003dAndroid\" ^\n  \"-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON\" ^\n  \"-DCMAKE_SYSTEM_VERSION\u003d24\" ^\n  \"-DANDROID_PLATFORM\u003dandroid-24\" ^\n  \"-DANDROID_ABI\u003dx86\" ^\n  \"-DCMAKE_ANDROID_ARCH_ABI\u003dx86\" ^\n  \"-DANDROID_NDK\u003dE:\\\\Sdk\\\\ndk\\\\27.0.12077973\" ^\n  \"-DCMAKE_ANDROID_NDK\u003dE:\\\\Sdk\\\\ndk\\\\27.0.12077973\" ^\n  \"-DCMAKE_TOOLCHAIN_FILE\u003dE:\\\\Sdk\\\\ndk\\\\27.0.12077973\\\\build\\\\cmake\\\\android.toolchain.cmake\" ^\n  \"-DCMAKE_MAKE_PROGRAM\u003dE:\\\\Sdk\\\\cmake\\\\3.31.5\\\\bin\\\\ninja.exe\" ^\n  \"-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003dE:\\\\AS\\\\test\\\\ncnn-android-yolov8-master\\\\app\\\\build\\\\intermediates\\\\cxx\\\\Debug\\\\373z3511\\\\obj\\\\x86\" ^\n  \"-DCMAKE_RUNTIME_OUTPUT_DIRECTORY\u003dE:\\\\AS\\\\test\\\\ncnn-android-yolov8-master\\\\app\\\\build\\\\intermediates\\\\cxx\\\\Debug\\\\373z3511\\\\obj\\\\x86\" ^\n  \"-DCMAKE_BUILD_TYPE\u003dDebug\" ^\n  \"-BE:\\\\AS\\\\test\\\\ncnn-android-yolov8-master\\\\app\\\\.cxx\\\\Debug\\\\373z3511\\\\x86\" ^\n  -GNinja ^\n  \"-DANDROID_SUPPORT_FLEXIBLE_PAGE_SIZES\u003dON\"\n",
+    "file_": "E:\\AS\\test\\ncnn-android-yolov8-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "level_": 0,
+    "message_": "Received process result: 1",
+    "file_": "E:\\AS\\test\\ncnn-android-yolov8-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "level_": 0,
+    "message_": "JSON generation completed with problem. Exception: com.android.ide.common.process.ProcessException: -- The C compiler identification is Clang 18.0.1\n-- The CXX compiler identification is Clang 18.0.1\n-- Detecting C compiler ABI info\n-- Detecting C compiler ABI info - done\n-- Check for working C compiler: E:/Sdk/ndk/27.0.12077973/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe - skipped\n-- Detecting C compile features\n-- Detecting C compile features - done\n-- Detecting CXX compiler ABI info\n-- Detecting CXX compiler ABI info - done\n-- Check for working CXX compiler: E:/Sdk/ndk/27.0.12077973/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe - skipped\n-- Detecting CXX compile features\n-- Detecting CXX compile features - done\n-- Configuring incomplete, errors occurred!\n\nC++ build system [configure] failed while executing:\n    @echo off\n    \"E:\\\\Sdk\\\\cmake\\\\3.31.5\\\\bin\\\\cmake.exe\" ^\n      \"-HE:\\\\AS\\\\test\\\\ncnn-android-yolov8-master\\\\app\\\\src\\\\main\\\\jni\" ^\n      \"-DCMAKE_SYSTEM_NAME\u003dAndroid\" ^\n      \"-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON\" ^\n      \"-DCMAKE_SYSTEM_VERSION\u003d24\" ^\n      \"-DANDROID_PLATFORM\u003dandroid-24\" ^\n      \"-DANDROID_ABI\u003dx86\" ^\n      \"-DCMAKE_ANDROID_ARCH_ABI\u003dx86\" ^\n      \"-DANDROID_NDK\u003dE:\\\\Sdk\\\\ndk\\\\27.0.12077973\" ^\n      \"-DCMAKE_ANDROID_NDK\u003dE:\\\\Sdk\\\\ndk\\\\27.0.12077973\" ^\n      \"-DCMAKE_TOOLCHAIN_FILE\u003dE:\\\\Sdk\\\\ndk\\\\27.0.12077973\\\\build\\\\cmake\\\\android.toolchain.cmake\" ^\n      \"-DCMAKE_MAKE_PROGRAM\u003dE:\\\\Sdk\\\\cmake\\\\3.31.5\\\\bin\\\\ninja.exe\" ^\n      \"-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003dE:\\\\AS\\\\test\\\\ncnn-android-yolov8-master\\\\app\\\\build\\\\intermediates\\\\cxx\\\\Debug\\\\373z3511\\\\obj\\\\x86\" ^\n      \"-DCMAKE_RUNTIME_OUTPUT_DIRECTORY\u003dE:\\\\AS\\\\test\\\\ncnn-android-yolov8-master\\\\app\\\\build\\\\intermediates\\\\cxx\\\\Debug\\\\373z3511\\\\obj\\\\x86\" ^\n      \"-DCMAKE_BUILD_TYPE\u003dDebug\" ^\n      \"-BE:\\\\AS\\\\test\\\\ncnn-android-yolov8-master\\\\app\\\\.cxx\\\\Debug\\\\373z3511\\\\x86\" ^\n      -GNinja ^\n      \"-DANDROID_SUPPORT_FLEXIBLE_PAGE_SIZES\u003dON\"\n  from E:\\AS\\test\\ncnn-android-yolov8-master\\app\nCMake Warning (dev) at CMakeLists.txt:1 (project):\n  cmake_minimum_required() should be called prior to this top-level project()\n  call.  Please see the cmake-commands(7) manual for usage documentation of\n  both commands.\nThis warning is for project developers.  Use -Wno-dev to suppress it.\n\nCMake Deprecation Warning at E:/Sdk/ndk/27.0.12077973/build/cmake/android.toolchain.cmake:35 (cmake_minimum_required):\n  Compatibility with CMake \u003c 3.10 will be removed from a future version of\n  CMake.\n\n  Update the VERSION argument \u003cmin\u003e value.  Or, use the \u003cmin\u003e...\u003cmax\u003e syntax\n  to tell CMake that the project requires at least \u003cmin\u003e but has been updated\n  to work with policies introduced by \u003cmax\u003e or earlier.\nCall Stack (most recent call first):\n  E:/Sdk/cmake/3.31.5/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake:146 (include)\n  CMakeLists.txt:1 (project)\n\n\nCMake Deprecation Warning at E:/Sdk/ndk/27.0.12077973/build/cmake/android-legacy.toolchain.cmake:35 (cmake_minimum_required):\n  Compatibility with CMake \u003c 3.10 will be removed from a future version of\n  CMake.\n\n  Update the VERSION argument \u003cmin\u003e value.  Or, use the \u003cmin\u003e...\u003cmax\u003e syntax\n  to tell CMake that the project requires at least \u003cmin\u003e but has been updated\n  to work with policies introduced by \u003cmax\u003e or earlier.\nCall Stack (most recent call first):\n  E:/Sdk/ndk/27.0.12077973/build/cmake/android.toolchain.cmake:55 (include)\n  E:/Sdk/cmake/3.31.5/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake:146 (include)\n  CMakeLists.txt:1 (project)\n\n\nCMake Deprecation Warning at E:/Sdk/ndk/27.0.12077973/build/cmake/android.toolchain.cmake:35 (cmake_minimum_required):\n  Compatibility with CMake \u003c 3.10 will be removed from a future version of\n  CMake.\n\n  Update the VERSION argument \u003cmin\u003e value.  Or, use the \u003cmin\u003e...\u003cmax\u003e syntax\n  to tell CMake that the project requires at least \u003cmin\u003e but has been updated\n  to work with policies introduced by \u003cmax\u003e or earlier.\nCall Stack (most recent call first):\n  E:/AS/test/ncnn-android-yolov8-master/app/.cxx/Debug/373z3511/x86/CMakeFiles/3.31.5/CMakeSystem.cmake:6 (include)\n  CMakeLists.txt:1 (project)\n\n\nCMake Deprecation Warning at E:/Sdk/ndk/27.0.12077973/build/cmake/android.toolchain.cmake:35 (cmake_minimum_required):\n  Compatibility with CMake \u003c 3.10 will be removed from a future version of\n  CMake.\n\n  Update the VERSION argument \u003cmin\u003e value.  Or, use the \u003cmin\u003e...\u003cmax\u003e syntax\n  to tell CMake that the project requires at least \u003cmin\u003e but has been updated\n  to work with policies introduced by \u003cmax\u003e or earlier.\nCall Stack (most recent call first):\n  E:/AS/test/ncnn-android-yolov8-master/app/.cxx/Debug/373z3511/x86/CMakeFiles/3.31.5/CMakeSystem.cmake:6 (include)\n  E:/AS/test/ncnn-android-yolov8-master/app/.cxx/Debug/373z3511/x86/CMakeFiles/CMakeScratch/TryCompile-qhz05h/CMakeLists.txt:4 (project)\n\n\nCMake Deprecation Warning at E:/Sdk/ndk/27.0.12077973/build/cmake/android-legacy.toolchain.cmake:35 (cmake_minimum_required):\n  Compatibility with CMake \u003c 3.10 will be removed from a future version of\n  CMake.\n\n  Update the VERSION argument \u003cmin\u003e value.  Or, use the \u003cmin\u003e...\u003cmax\u003e syntax\n  to tell CMake that the project requires at least \u003cmin\u003e but has been updated\n  to work with policies introduced by \u003cmax\u003e or earlier.\nCall Stack (most recent call first):\n  E:/Sdk/ndk/27.0.12077973/build/cmake/android.toolchain.cmake:55 (include)\n  E:/AS/test/ncnn-android-yolov8-master/app/.cxx/Debug/373z3511/x86/CMakeFiles/3.31.5/CMakeSystem.cmake:6 (include)\n  E:/AS/test/ncnn-android-yolov8-master/app/.cxx/Debug/373z3511/x86/CMakeFiles/CMakeScratch/TryCompile-qhz05h/CMakeLists.txt:4 (project)\n\n\nCMake Deprecation Warning at E:/Sdk/ndk/27.0.12077973/build/cmake/android.toolchain.cmake:35 (cmake_minimum_required):\n  Compatibility with CMake \u003c 3.10 will be removed from a future version of\n  CMake.\n\n  Update the VERSION argument \u003cmin\u003e value.  Or, use the \u003cmin\u003e...\u003cmax\u003e syntax\n  to tell CMake that the project requires at least \u003cmin\u003e but has been updated\n  to work with policies introduced by \u003cmax\u003e or earlier.\nCall Stack (most recent call first):\n  E:/AS/test/ncnn-android-yolov8-master/app/.cxx/Debug/373z3511/x86/CMakeFiles/3.31.5/CMakeSystem.cmake:6 (include)\n  E:/AS/test/ncnn-android-yolov8-master/app/.cxx/Debug/373z3511/x86/CMakeFiles/CMakeScratch/TryCompile-kprx56/CMakeLists.txt:4 (project)\n\n\nCMake Deprecation Warning at E:/Sdk/ndk/27.0.12077973/build/cmake/android-legacy.toolchain.cmake:35 (cmake_minimum_required):\n  Compatibility with CMake \u003c 3.10 will be removed from a future version of\n  CMake.\n\n  Update the VERSION argument \u003cmin\u003e value.  Or, use the \u003cmin\u003e...\u003cmax\u003e syntax\n  to tell CMake that the project requires at least \u003cmin\u003e but has been updated\n  to work with policies introduced by \u003cmax\u003e or earlier.\nCall Stack (most recent call first):\n  E:/Sdk/ndk/27.0.12077973/build/cmake/android.toolchain.cmake:55 (include)\n  E:/AS/test/ncnn-android-yolov8-master/app/.cxx/Debug/373z3511/x86/CMakeFiles/3.31.5/CMakeSystem.cmake:6 (include)\n  E:/AS/test/ncnn-android-yolov8-master/app/.cxx/Debug/373z3511/x86/CMakeFiles/CMakeScratch/TryCompile-kprx56/CMakeLists.txt:4 (project)\n\n\nCMake Error at CMakeLists.txt:8 (find_package):\n  By not providing \"FindOpenCV.cmake\" in CMAKE_MODULE_PATH this project has\n  asked CMake to find a package configuration file provided by \"OpenCV\", but\n  CMake did not find one.\n\n  Could not find a package configuration file provided by \"OpenCV\" with any\n  of the following names:\n\n    OpenCVConfig.cmake\n    opencv-config.cmake\n\n  Add the installation prefix of \"OpenCV\" to CMAKE_PREFIX_PATH or set\n  \"OpenCV_DIR\" to a directory containing one of the above files.  If \"OpenCV\"\n  provides a separate development package or SDK, be sure it has been\n  installed.",
+    "file_": "E:\\AS\\test\\ncnn-android-yolov8-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  }
+]
